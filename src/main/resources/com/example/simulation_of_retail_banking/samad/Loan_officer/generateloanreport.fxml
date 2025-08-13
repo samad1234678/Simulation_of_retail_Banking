@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Loan_officer.GenerateloanreportController">
+   <children>
+      <Label layoutX="121.0" layoutY="14.0" prefHeight="49.0" prefWidth="358.0" text="Generate Loan report" textFill="#c419be">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#backbution" prefHeight="25.0" prefWidth="52.0" text="Back" />
+      <Label layoutX="26.0" layoutY="99.0" text="Client Name:" />
+      <Label layoutX="26.0" layoutY="124.0" prefHeight="26.0" prefWidth="89.0" text="Client ID:" />
+      <Label layoutX="21.0" layoutY="157.0" prefHeight="18.0" prefWidth="90.0" text="Report Type:" />
+      <Label layoutX="320.0" layoutY="91.0" text="Loan Report Name:" />
+      <Label layoutX="335.0" layoutY="124.0" text="Rerport Date:" />
+      <Label layoutX="337.0" layoutY="157.0" text="Loan Status: " />
+      <Label layoutX="26.0" layoutY="192.0" text="Gender:" />
+      <Label layoutX="353.0" layoutY="191.0" text="E-mail:" />
+      <Button layoutX="94.0" layoutY="215.0" mnemonicParsing="false" onAction="#addtoallbution" prefHeight="26.0" prefWidth="102.0" text="Add to All" />
+      <Button layoutX="246.0" layoutY="215.0" mnemonicParsing="false" onAction="#showalldatabution" text="Show All data" />
+      <TextField fx:id="nametextfield" layoutX="97.0" layoutY="96.0" />
+      <TextField fx:id="idtextfield" layoutX="84.0" layoutY="125.0" />
+      <TextField fx:id="reporttypetextfield" layoutX="98.0" layoutY="154.0" />
+      <ComboBox fx:id="gendercombotextfield" layoutX="75.0" layoutY="187.0" prefWidth="150.0" />
+      <TextField fx:id="loanreportnametextfield" layoutX="429.0" layoutY="87.0" />
+      <DatePicker fx:id="reportdatetextfield" layoutX="406.0" layoutY="120.0" />
+      <ComboBox fx:id="loanstatustextfieldcombo" layoutX="404.0" layoutY="153.0" prefWidth="150.0" />
+      <TextField fx:id="emailtextfield" layoutX="398.0" layoutY="188.0" />
+      <TableView fx:id="tableview" layoutX="21.0" layoutY="250.0" prefHeight="138.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="namecloumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="idcloumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="reporttypecloumn" prefWidth="75.0" text="Report Type" />
+            <TableColumn fx:id="datecloumn" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="loanstatuscloumn" prefWidth="75.0" text="Loan Status" />
+            <TableColumn fx:id="reportnamecloumn" prefWidth="96.0" text="Report Name" />
+            <TableColumn fx:id="emailcloumn" prefWidth="99.20001220703125" text="E-mail" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

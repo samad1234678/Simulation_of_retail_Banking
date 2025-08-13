@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Branch_manager.SettheBranchTargetbutionController">
+   <children>
+      <Label layoutX="195.0" layoutY="12.0" prefHeight="46.0" prefWidth="278.0" text="Set The Branch Target " textFill="#0dc1a0">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="31.0" layoutY="23.0" mnemonicParsing="false" onAction="#backbution" text="Back" />
+      <Label layoutX="37.0" layoutY="98.0" text="Branch Name:" />
+      <Label layoutX="37.0" layoutY="131.0" text="Target Amount:" />
+      <Label layoutX="37.0" layoutY="163.0" text="Target End Date:" />
+      <Label layoutX="342.0" layoutY="98.0" text="Branch ID:" />
+      <Label layoutX="320.0" layoutY="122.0" />
+      <Label layoutX="310.0" layoutY="131.0" text="Target Start Date:" />
+      <TableView fx:id="tableview" layoutX="10.0" layoutY="253.0" prefHeight="142.0" prefWidth="602.0">
+         <columns>
+            <TableColumn fx:id="branchnamecloumn" prefWidth="87.20001411437988" text="Branch Name" />
+            <TableColumn fx:id="targetamnountcloumn" prefWidth="66.39998626708984" text="Amount" />
+            <TableColumn fx:id="targetenddatecloumn" prefWidth="72.79998779296875" text="EndDate" />
+            <TableColumn fx:id="targetstartdatecloumn" prefWidth="75.0" text="Start Date" />
+            <TableColumn fx:id="targettypecloumn" prefWidth="97.60003662109375" text="Target Type" />
+            <TableColumn fx:id="Branchidcloumn" prefWidth="102.4000244140625" text="Branch ID" />
+            <TableColumn fx:id="targetareacloumn" prefWidth="98.39996948242185" text="Target Area" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="targetstartdatetextfield" layoutX="423.0" layoutY="127.0" />
+      <TextField fx:id="branchidtextfield" layoutX="410.0" layoutY="94.0" />
+      <Button layoutX="33.0" layoutY="216.0" mnemonicParsing="false" onAction="#addalldatbution" text="Add All  Data" />
+      <Button layoutX="423.0" layoutY="219.0" mnemonicParsing="false" onAction="#showalldatabution" text="Show All Data" />
+      <TextField fx:id="branchnametextfield" layoutX="131.0" layoutY="94.0" />
+      <TextField fx:id="targetamounttextfield" layoutX="131.0" layoutY="127.0" />
+      <DatePicker fx:id="targetenddatepickertextfield" layoutX="131.0" layoutY="159.0" />
+      <Label layoutX="342.0" layoutY="172.0" text="Target Type:" />
+      <TextField fx:id="targetareatextfile" layoutX="144.0" layoutY="188.0" />
+      <Label layoutX="67.0" layoutY="192.0" text="Target Area:" />
+      <ComboBox fx:id="targettypetextfieldcombo" layoutX="423.0" layoutY="168.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

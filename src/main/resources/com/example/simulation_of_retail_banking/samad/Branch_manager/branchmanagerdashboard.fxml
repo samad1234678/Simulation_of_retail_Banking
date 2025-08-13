@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Branch_manager.BranchmanagerdashboardController">
+   <children>
+      <Label layoutX="133.0" layoutY="8.0" prefHeight="46.0" prefWidth="326.0" text="Branch Manager Dash Board" textFill="#d43636">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="36.0" layoutY="81.0" mnemonicParsing="false" onAction="#scheduleStaffShiftsbution" prefHeight="46.0" prefWidth="203.0" text="Schedule Staff Shifts" />
+      <Button layoutX="357.0" layoutY="71.0" mnemonicParsing="false" onAction="#manageBranchBudgetbution" prefHeight="46.0" prefWidth="203.0" text="Manage Branch Budget" />
+      <Button layoutX="36.0" layoutY="145.0" mnemonicParsing="false" onAction="#settheBranchTargetbution" prefHeight="46.0" prefWidth="203.0" text="Set the Branch Target" />
+      <Button layoutX="36.0" layoutY="212.0" mnemonicParsing="false" onAction="#generateBranchPerformanceReportsbution" prefHeight="46.0" prefWidth="225.0" text="Generate Branch Performance Reports" />
+      <Button layoutX="36.0" layoutY="284.0" mnemonicParsing="false" onAction="#initiateMarketingCampaignsbution" prefHeight="46.0" prefWidth="203.0" text="Initiate Marketing Campaigns" />
+      <Button layoutX="357.0" layoutY="145.0" mnemonicParsing="false" onAction="#conductStaffTrainingbution" prefHeight="46.0" prefWidth="203.0" text="Conduct Staff Training" />
+      <Button layoutX="357.0" layoutY="215.0" mnemonicParsing="false" onAction="#transferEmployeesBetweenBranchesbution" prefHeight="54.0" prefWidth="237.0" text="Transfer Employees Between Branches" />
+      <Button layoutX="357.0" layoutY="294.0" mnemonicParsing="false" onAction="#scheduleExternalInspectionsbution" prefHeight="46.0" prefWidth="203.0" text="Schedule External Inspections" />
+   </children>
+</AnchorPane>

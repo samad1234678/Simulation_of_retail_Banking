@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Branch_manager.InitiateMarketingCampaignsController">
+   <children>
+      <Label layoutX="139.0" layoutY="12.0" prefHeight="48.0" prefWidth="336.0" text="Initiate Marketing Campaigns" textFill="#a12f9d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#backbution" text="Back" />
+      <AnchorPane layoutX="34.0" layoutY="12.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="131.0" layoutY="187.0" mnemonicParsing="false" onAction="#addalldatabution" text="Add All Data" />
+            <Button layoutX="327.0" layoutY="187.0" mnemonicParsing="false" onAction="#showalldatabution" text="Show All Data" />
+            <Label layoutX="27.0" layoutY="71.0" prefHeight="26.0" prefWidth="95.0" text="Camping Name:" />
+            <Label layoutX="27.0" layoutY="96.0" prefHeight="26.0" prefWidth="70.0" text="Camp Area:" />
+            <Label layoutX="27.0" layoutY="131.0" text=" Start Date:" />
+            <Label layoutX="300.0" layoutY="71.0" text="Camping Type:" />
+            <Label layoutX="300.0" layoutY="100.0" text=" End Date:" />
+            <Label layoutX="317.0" layoutY="131.0" text="Target Audiance:" />
+            <TextField fx:id="campingnametextfield" layoutX="116.0" layoutY="67.0" />
+            <TextField fx:id="campareatextfield" layoutX="116.0" layoutY="97.0" />
+            <TextField fx:id="branchareatextfield" layoutX="413.0" layoutY="127.0" />
+            <ComboBox fx:id="campingtimecombotextfield" layoutX="399.0" layoutY="67.0" prefWidth="150.0" />
+            <DatePicker fx:id="startdatepeekertextfield" layoutX="115.0" layoutY="127.0" />
+            <DatePicker fx:id="enddatetextfield" layoutX="400.0" layoutY="96.0" />
+            <TableView fx:id="tableview" layoutX="23.0" layoutY="239.0" prefHeight="134.0" prefWidth="554.0">
+               <columns>
+                  <TableColumn fx:id="campingnamecloumn" prefWidth="96.79998779296875" text="Camping Name" />
+                  <TableColumn fx:id="campareacloumn" prefWidth="111.20001220703125" text="Camp Area" />
+                  <TableColumn fx:id="startdatecloumn" prefWidth="120.0" text=" Start Date" />
+                  <TableColumn fx:id="campingtipecloumn" prefWidth="115.20001220703125" text="Camping Type" />
+                  <TableColumn fx:id="Targetaudiancecloumn" prefWidth="111.20001220703125" text="Target Audiance" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

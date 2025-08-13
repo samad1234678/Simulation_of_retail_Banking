@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Loan_officer.CommunicationwithclientController">
+   <children>
+      <Label layoutX="149.0" prefHeight="43.0" prefWidth="302.0" text="Communication With Client" textFill="#201acc">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="63.0" text="Client Name:" />
+      <Label layoutX="32.0" layoutY="103.0" text="Client ID:" />
+      <Label layoutX="32.0" layoutY="140.0" text="Contact:" />
+      <Label layoutX="32.0" layoutY="172.0" text="E-mail:" />
+      <Label layoutX="325.0" layoutY="72.0" text="Client Adress:" />
+      <Label layoutX="325.0" layoutY="112.0" text="Communication Statu:" />
+      <Label layoutX="315.0" layoutY="153.0" text="Communication Date:" />
+      <Label layoutX="325.0" layoutY="192.0" text="Client Gender:" />
+      <TextField fx:id="nametextfield" layoutX="111.0" layoutY="60.0" />
+      <TextField fx:id="idtextfield" layoutX="94.0" layoutY="99.0" />
+      <TextField fx:id="contacttextfield" layoutX="80.0" layoutY="136.0" />
+      <TextField fx:id="emailtetfield" layoutX="81.0" layoutY="168.0" />
+      <TextField fx:id="adresstextfield" layoutX="400.0" layoutY="68.0" />
+      <TextField fx:id="communicationstatustextfield" layoutX="445.0" layoutY="112.0" />
+      <ComboBox fx:id="gendertextfield" layoutX="408.0" layoutY="188.0" prefWidth="150.0" />
+      <TableView fx:id="tableview" layoutX="8.0" layoutY="259.0" prefHeight="126.0" prefWidth="602.0">
+        <columns>
+          <TableColumn fx:id="namecloumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="idcloumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="contactcloumn" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="emailcloumnn" prefWidth="75.0" text="E-mail" />
+            <TableColumn fx:id="addresscloumn" prefWidth="75.0" text="Adress" />
+            <TableColumn fx:id="communicationstatuscloumn" prefWidth="146.4000244140625" text="CommunicationStatus" />
+            <TableColumn fx:id="gendercloumn" prefWidth="75.0" text="Gender" />
+        </columns>
+      </TableView>
+      <Button layoutX="30.0" layoutY="22.0" mnemonicParsing="false" onAction="#backbution" text="Back" />
+      <Button layoutX="42.0" layoutY="210.0" mnemonicParsing="false" onAction="#addalldocumentbution" text="Add All Document" />
+      <Button layoutX="211.0" layoutY="210.0" mnemonicParsing="false" onAction="#showalldetailsbution" text="Show all Details" />
+      <DatePicker fx:id="communicationdatetextfield" layoutX="433.0" layoutY="149.0" />
+   </children>
+</AnchorPane>

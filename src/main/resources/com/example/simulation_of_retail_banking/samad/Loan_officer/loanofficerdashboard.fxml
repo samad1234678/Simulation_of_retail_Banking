@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Loan_officer.LoanofficerdashboardController">
+   <children>
+      <Label layoutX="169.0" layoutY="20.0" prefHeight="48.0" prefWidth="269.0" text="Loan Officer Dash Board" textFill="#1938b0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#applyLoanApplycationbution" prefHeight="38.0" prefWidth="166.0" text="Apply Loan Applycation" />
+      <Button layoutX="19.0" layoutY="151.0" mnemonicParsing="false" onAction="#CalculateLoanTermbution" prefHeight="38.0" prefWidth="166.0" text="Calculate Loan Term" />
+      <Button layoutX="14.0" layoutY="226.0" mnemonicParsing="false" onAction="#CommunicationWithClientbution" prefHeight="38.0" prefWidth="166.0" text="Communication With Client" />
+      <Button layoutX="19.0" layoutY="295.0" mnemonicParsing="false" onAction="#GenarateLoanReportbution" prefHeight="38.0" prefWidth="166.0" text="Genarate Loan Report" />
+      <Button layoutX="377.0" layoutY="81.0" mnemonicParsing="false" onAction="#CordinateBranchMannegerbution" prefHeight="38.0" prefWidth="166.0" text="Cordinate Branch Manneger" />
+      <Button layoutX="372.0" layoutY="151.0" mnemonicParsing="false" onAction="#ManageLoanProtfoliobution" prefHeight="38.0" prefWidth="178.0" text="Manage Loan Protfolio" />
+      <Button layoutX="376.0" layoutY="216.0" mnemonicParsing="false" onAction="#UpdateCustomerInformationbution" prefHeight="48.0" prefWidth="186.0" text="Update Customer Information" />
+      <Button layoutX="379.0" layoutY="295.0" mnemonicParsing="false" onAction="#ApproveOrrejectLoanbution" prefHeight="38.0" prefWidth="178.0" text="Approve Or reject Loan" />
+   </children>
+</AnchorPane>

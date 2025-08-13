@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Loan_officer.CalculateloantermController">
+   <children>
+      <Label layoutX="154.0" layoutY="14.0" prefHeight="45.0" prefWidth="254.0" text="Calculate Loan Term" textFill="#3611c2">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="85.0" prefHeight="22.0" prefWidth="78.0" text="Cient Name:" />
+      <Label layoutX="32.0" layoutY="111.0" prefHeight="22.0" prefWidth="68.0" text="Client ID:" />
+      <Label layoutX="32.0" layoutY="141.0" prefHeight="22.0" prefWidth="78.0" text="Loan Amount:" />
+      <Label layoutX="27.0" layoutY="171.0" prefHeight="22.0" prefWidth="78.0" text="Annul Intarest:" />
+      <Label layoutX="281.0" layoutY="74.0" prefHeight="22.0" prefWidth="90.0" text="Loan Term year:" />
+      <Label layoutX="281.0" layoutY="111.0" prefHeight="22.0" prefWidth="90.0" text="Total Payment:" />
+      <Label layoutX="281.0" layoutY="141.0" prefHeight="22.0" prefWidth="90.0" text="Total Intarest:" />
+      <Label layoutX="281.0" layoutY="171.0" prefHeight="22.0" prefWidth="90.0" text="Loan Start Date:" />
+      <TextField fx:id="nametextfield" layoutX="111.0" layoutY="84.0" />
+      <TextField fx:id="idtextfield" layoutX="112.0" layoutY="110.0" />
+      <TextField fx:id="loanamounttetfield" layoutX="113.0" layoutY="140.0" />
+      <TextField fx:id="Annulintaresttextfield" layoutX="112.0" layoutY="170.0" />
+      <TextField fx:id="loantermyeartextfield" layoutX="381.0" layoutY="72.0" />
+      <TextField fx:id="totalpaymenttextfield" layoutX="382.0" layoutY="110.0" />
+      <TextField fx:id="totalintaresttextfield" layoutX="383.0" layoutY="140.0" />
+      <DatePicker fx:id="loanstartdatetextfield" layoutX="376.0" layoutY="170.0" />
+      <TableView fx:id="tableview" layoutX="44.0" layoutY="246.0" prefHeight="140.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="naemcolumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="nidcloumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="loanamountcloumn" prefWidth="88.0" text="Loan Amount" />
+            <TableColumn fx:id="loantermyearcloumn" prefWidth="102.4000244140625" text="Loan term yaear" />
+            <TableColumn fx:id="totalinatarestcloumn" prefWidth="86.39996337890625" text="Total Intarest" />
+            <TableColumn fx:id="loanstartdatexloumn" prefWidth="113.60001220703123" text="Loan Start Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="67.0" layoutY="210.0" mnemonicParsing="false" onAction="#addallbution" text="Add All Data" />
+      <Button layoutX="381.0" layoutY="210.0" mnemonicParsing="false" onAction="#showalldatabution" text="Show All Data " />
+      <Button layoutX="18.0" layoutY="24.0" mnemonicParsing="false" onAction="#backbution" text="Back" />
+   </children>
+</AnchorPane>
