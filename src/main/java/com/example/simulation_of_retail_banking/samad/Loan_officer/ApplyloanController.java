@@ -2,15 +2,21 @@ package com.example.simulation_of_retail_banking.samad.Loan_officer;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -80,6 +86,7 @@ public class ApplyloanController {
 
     @FXML
     void addalladatabution(ActionEvent event) {
+        tableview.getItems().clear();
         String name = Clientnametextfield.getText();
         int nid = Integer.parseInt(clientnidtextfield.getText());
         int phone = Integer.parseInt(phonetextfield.getText());
@@ -142,12 +149,20 @@ public class ApplyloanController {
     }
 
     @FXML
-    void backbution(ActionEvent event) {
+    void backbution(ActionEvent event) throws IOException {
+        Parent scene2Parent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/simulation_of_retail_banking/Samad/Loan_Officer/loanofficerdashboard.fxml")));
+        Scene scene2 = new Scene(scene2Parent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setTitle("LoanofficerdashboardController");
+        window.setScene(scene2);
+        window.show();
+
 
     }
 
     @FXML
     void showalldatabution(ActionEvent event) {
+
         loadAll();
 
 

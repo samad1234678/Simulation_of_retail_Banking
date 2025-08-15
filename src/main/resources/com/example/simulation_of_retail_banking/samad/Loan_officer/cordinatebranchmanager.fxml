@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Loan_officer.CordinatebranchmanagerController">
    <children>
       <Label layoutX="143.0" layoutY="14.0" prefHeight="44.0" prefWidth="279.0" text="Cordinate Branch Manager" textFill="#ac4c4c">
@@ -36,14 +35,12 @@
       <TextField fx:id="branchlocationtextfield" layoutX="409.0" layoutY="180.0" />
       <Button layoutX="57.0" layoutY="238.0" mnemonicParsing="false" onAction="#addallbution" text="Add All" />
       <Button layoutX="332.0" layoutY="239.0" mnemonicParsing="false" onAction="#showalldatabution" text="Show All Data" />
-      <TableView fx:id="tableview" layoutX="12.0" layoutY="286.0" prefHeight="199.0" prefWidth="578.0">
+      <TableView fx:id="tableview" layoutX="24.0" layoutY="279.0" prefHeight="199.0" prefWidth="578.0">
         <columns>
-          <TableColumn fx:id="namecloumn" prefWidth="104.0" text="Manager Name" />
-          <TableColumn fx:id="idcloumn" prefWidth="107.20001220703125" text="Manager ID" />
-            <TableColumn fx:id="meetingdatecloumn" prefWidth="92.800048828125" text="Meeting Date" />
-            <TableColumn fx:id="emailcloumn" prefWidth="75.0" text="E-mail" />
-            <TableColumn fx:id="branchlocationcloumn" prefWidth="108.0" text="Branch Location" />
-            <TableColumn fx:id="meetingtimecloumn" prefWidth="88.80002441406248" text="Meeting Time" />
+          <TableColumn fx:id="namecloumn" prefWidth="185.5999755859375" text="Manager Name" />
+          <TableColumn fx:id="idcloumn" prefWidth="138.4000244140625" text="Manager ID" />
+            <TableColumn fx:id="meetingdatecloumn" prefWidth="136.0" text="Meeting Date" />
+            <TableColumn fx:id="emailcloumn" prefWidth="116.0" text="E-mail" />
         </columns>
       </TableView>
    </children>

@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Loan_officer.ManageloanprotfolioController">
    <children>
       <Label layoutX="182.0" layoutY="2.0" prefHeight="43.0" prefWidth="300.0" text="Manage Loan Protfolio" textFill="#07e0c0">
@@ -33,18 +32,15 @@
       <Button layoutX="231.0" layoutY="238.0" mnemonicParsing="false" onAction="#showalldatabution" text="Show All Data" />
       <TableView fx:id="tableview" layoutX="17.0" layoutY="272.0" prefHeight="110.0" prefWidth="550.0">
         <columns>
-          <TableColumn fx:id="loanidcloumn" prefWidth="75.0" text="Loan ID" />
-          <TableColumn fx:id="clientnamecloumn" prefWidth="75.0" text="Client Name" />
-            <TableColumn fx:id="clientidcloumn" prefWidth="75.0" text="Client ID" />
-            <TableColumn fx:id="loantypecloumn" prefWidth="75.0" text="Loan Type" />
-            <TableColumn fx:id="gendercloumn" prefWidth="75.0" text="Gender" />
-            <TableColumn fx:id="loanamountcloumn" prefWidth="88.800048828125" text="Loan amount" />
-            <TableColumn fx:id="startdatecloumn" prefWidth="75.0" text="Start Date" />
+          <TableColumn fx:id="loanidcloumn" prefWidth="136.0" text="Loan ID" />
+          <TableColumn fx:id="clientnamecloumn" prefWidth="130.4000244140625" text="Client Name" />
+            <TableColumn fx:id="loanamountcloumn" prefWidth="132.79998779296875" text="Loan amount" />
+            <TableColumn fx:id="startdatecloumn" prefWidth="142.39996337890625" text="Start Date" />
         </columns>
       </TableView>
       <TextField fx:id="loanidtextfield" layoutX="92.0" layoutY="78.0" />
       <TextField fx:id="clientnametextfield" layoutX="93.0" layoutY="106.0" />
-      <TextField fx:id="clientidtextfield" layoutX="94.0" layoutY="135.0" />
+      <TextField fx:id="clientidtextfield" layoutX="107.0" layoutY="134.0" />
       <ComboBox fx:id="loantypecombotextfield" layoutX="92.0" layoutY="161.0" prefWidth="150.0" />
       <ComboBox fx:id="clientgendercombotext" layoutX="108.0" layoutY="188.0" prefWidth="150.0" />
       <TextField fx:id="loanamounttextfield" layoutX="399.0" layoutY="78.0" />

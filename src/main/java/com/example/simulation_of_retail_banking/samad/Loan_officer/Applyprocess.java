@@ -96,3 +96,4 @@ public class Applyprocess extends User implements Serializable {
                 '}';
     }
 }
+

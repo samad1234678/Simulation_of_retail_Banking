@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Branch_manager.GenerateBranchPerformanceReportsController">
    <children>
       <Label layoutX="107.0" layoutY="11.0" prefHeight="40.0" prefWidth="385.0" text="Generate Branch Performance report" textFill="#dc1616">
@@ -31,7 +30,7 @@
       <TextField fx:id="branchcodetextfield" layoutX="116.0" layoutY="97.0" />
       <TextField fx:id="branchareatextfield" layoutX="400.0" layoutY="127.0" />
       <ComboBox fx:id="reporttypetextcombofield" layoutX="374.0" layoutY="67.0" prefWidth="150.0" />
-      <DatePicker fx:id="reportstarttextfield" layoutX="115.0" layoutY="127.0" />
+      <DatePicker fx:id="reportstarttextfield" layoutX="131.0" layoutY="127.0" />
       <DatePicker fx:id="reportenddatetextfield" layoutX="400.0" layoutY="96.0" />
       <TableView fx:id="tableview" layoutX="23.0" layoutY="239.0" prefHeight="134.0" prefWidth="554.0">
         <columns>

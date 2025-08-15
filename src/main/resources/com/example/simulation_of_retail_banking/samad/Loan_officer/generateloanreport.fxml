@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Loan_officer.GenerateloanreportController">
    <children>
       <Label layoutX="121.0" layoutY="14.0" prefHeight="49.0" prefWidth="358.0" text="Generate Loan report" textFill="#c419be">
@@ -39,13 +38,11 @@
       <TextField fx:id="emailtextfield" layoutX="398.0" layoutY="188.0" />
       <TableView fx:id="tableview" layoutX="21.0" layoutY="250.0" prefHeight="138.0" prefWidth="572.0">
         <columns>
-          <TableColumn fx:id="namecloumn" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="idcloumn" prefWidth="75.0" text="ID" />
-            <TableColumn fx:id="reporttypecloumn" prefWidth="75.0" text="Report Type" />
-            <TableColumn fx:id="datecloumn" prefWidth="75.0" text="Date" />
-            <TableColumn fx:id="loanstatuscloumn" prefWidth="75.0" text="Loan Status" />
-            <TableColumn fx:id="reportnamecloumn" prefWidth="96.0" text="Report Name" />
-            <TableColumn fx:id="emailcloumn" prefWidth="99.20001220703125" text="E-mail" />
+          <TableColumn fx:id="namecloumn" prefWidth="112.79995346069336" text="Name" />
+          <TableColumn fx:id="idcloumn" prefWidth="89.60003662109375" text="ID" />
+            <TableColumn fx:id="reporttypecloumn" prefWidth="126.39997863769531" text="Report Type" />
+            <TableColumn fx:id="datecloumn" prefWidth="106.39996337890625" text="Date" />
+            <TableColumn fx:id="emailcloumn" prefWidth="138.4000244140625" text="E-mail" />
         </columns>
       </TableView>
    </children>

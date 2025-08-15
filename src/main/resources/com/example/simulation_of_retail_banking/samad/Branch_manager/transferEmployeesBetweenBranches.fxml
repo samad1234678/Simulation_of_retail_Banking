@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulation_of_retail_banking.samad.Branch_manager.TransferEmployeesBetweenBranchesController">
    <children>
       <Label layoutX="78.0" layoutY="14.0" text="Transfer Employee Between Branches" textFill="#271ad9">
@@ -40,7 +39,8 @@
       <TextField fx:id="branchtotextfield" layoutX="388.0" layoutY="92.0" />
       <TextField fx:id="employeeidtextfield" layoutX="389.0" layoutY="157.0" />
       <DatePicker fx:id="transferdatepeekertextfield" layoutX="377.0" layoutY="120.0" />
-      <Button layoutX="73.0" layoutY="209.0" mnemonicParsing="false" onAction="#addallbution" text="Add All" />
-      <Button layoutX="403.0" layoutY="209.0" mnemonicParsing="false" onAction="#showalldatabution" text="Show All Data" />
+      <Button layoutX="37.0" layoutY="209.0" mnemonicParsing="false" onAction="#addallbution" text="Add All" />
+      <Button layoutX="465.0" layoutY="209.0" mnemonicParsing="false" onAction="#showalldatabution" text="Show All Data" />
+      <Button layoutX="148.0" layoutY="209.0" mnemonicParsing="false" onAction="#alertbution" text="Alert" />
    </children>
 </AnchorPane>

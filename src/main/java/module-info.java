@@ -2,6 +2,7 @@ module com.example.simulation_of_retail_banking {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.logging;
+    requires java.compiler;
 
 
     opens com.example.simulation_of_retail_banking to javafx.fxml;
